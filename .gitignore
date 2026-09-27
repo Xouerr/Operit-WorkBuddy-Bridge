@@ -1,0 +1,20 @@
+# Node / TypeScript
+node_modules/
+*.tsbuildinfo
+
+# 构建产物（本仓库默认提交 dist/ 以便直接分发插件）
+# dist/
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# 日志 / 临时
+*.log
+*.tmp
+proxy.log
+
+# Operit 本地调试
+.operit/

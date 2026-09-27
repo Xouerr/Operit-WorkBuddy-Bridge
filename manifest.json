@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "toolpkg_id": "com.operit.workbuddy_proxy_control",
+  "version": "0.1.0",
+  "main": "dist/main.js",
+  "display_name": {
+    "zh": "WorkBuddy 反代控制",
+    "en": "WorkBuddy Proxy Control"
+  },
+  "description": {
+    "zh": "在 Operit 持久终端中管理本地 workbuddy2api 反代服务（Python，默认 8790 端口）。支持配置、启动、停止、状态查询与打开管理后台。注意：WorkBuddy 反代存在封号风险，建议使用小号。",
+    "en": "Manage a local workbuddy2api reverse proxy (Python, default port 8790) through Operit's persistent terminal session. Configure, start, stop, check status and open the admin console. Note: the WorkBuddy proxy carries account-ban risk, please use a secondary account."
+  },
+  "enabled_by_default": false,
+  "subpackages": [
+    {
+      "id": "proxy_control",
+      "entry": "dist/packages/proxy_control.js",
+      "enabled_by_default": true,
+      "display_name": {
+        "zh": "WorkBuddy 反代控制",
+        "en": "WorkBuddy Proxy Control"
+      },
+      "description": {
+        "zh": "通过 Operit 持久终端会话（visible，非 hidden）管理 workbuddy2api 反代进程：启动、停止、状态查询、打开管理后台。",
+        "en": "Manage the workbuddy2api proxy process through Operit's persistent (visible) terminal session: start, stop, status check, and open the admin console."
+      }
+    }
+  ]
+}
